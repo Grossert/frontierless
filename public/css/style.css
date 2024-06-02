@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+
+}
+body{
+    color:antiquewhite;
+    background-color: #1f2233;
+    font-family: "Roboto", sans-serif;
+}
+
+/*HEADER*/
+body > header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom  right, #000000, #1f2233);
+    padding: 0.2em;
+}
+
+header > section:first-of-type{
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+
+header > section:last-of-type,
+header > section:last-of-type > nav{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+header > section:last-of-type > nav > a {
+    padding: 0.5em 2em;
+    margin: 0 1em;
+    border: 1px solid antiquewhite;
+}
+
+h1, a{
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: antiquewhite;
+    background-color: transparent;
+
+}
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+main > section{
+    display: block;
+    padding: 1.5em;
+    margin: 1em;
+    width: 100%;
+    border: 1px solid black;
+    background: linear-gradient(to bottom  right, #212b42, #000000);
+}
+section > h2{
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+}
+
+section > div{
+    display: block;
+    justify-content: right;
+    text-align: center;
+    align-content: center;
+    margin: 0.5em;
+}
+div > input{
+    width: 100%;
+    font-size: 1.5em;
+}
+div:has(> button){
+    display: flex;
+    justify-content: right;
+}
+div > button{
+    display: flex;
+    color: antiquewhite;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+div > button:hover{
+    font-size: 1.6em;
+    color: rgb(146, 146, 146);
+}
+
+/*LEFT SECTION*/
+main > section:first-child> section{
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows: 50% 50%;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid;
+    background-color:  #212b42;
+}
+div > select,
+div > input{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+div > label{
+    font-size: 2em;
+}
+
+/*RIGHT SECTION*/
+#rightProjetosUsuario > section:first-child{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+}
+
+main > section:last-child > section:first-child,
+main > section:last-child > section:last-child{
+    margin-top: 1em;
+    border-radius: 0.5em;
+    border: 1px solid antiquewhite;
+}
+main > section:last-child > section:last-child{
+    border: none;
+}
+
+/*passos*/
+.containerPassos {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    border: 1px solid antiquewhite;
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+}
+.containerPassos > header{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+.rotateArrow{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+ }
+ .ratA{
+     transition: transform 0.3s ease-in-out;
+ }
+
+.containerPassos > main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    margin: 0;
+}
+.containerPassos > main > div{
+    display: block;
+    width: 100%;
+}
+.containerPassos textarea,
+.containerPassos input {
+    display: none;
+}
+.expandContainer textarea,
+.expandContainer input {
+    display: block;   
+    font-size: 1em;
+    width: 100%;
+}
+.expandContainer textarea{
+    height: 100%;
+}
+
