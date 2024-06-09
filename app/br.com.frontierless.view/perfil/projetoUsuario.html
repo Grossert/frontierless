@@ -1,0 +1,53 @@
+<header>
+    <h4 id="dataInicio">Inicio</h4>
+</header>
+
+<section>
+    <div>
+        <input type="text" placeholder="Destino">
+    </div>
+    <div>
+        <label for="status">Status</label>
+        <select name="status" id="status">
+            <option value=""></option>
+            <option value="Concluido">Concluido</option>
+            <option value="Hiato">Hiato</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Abandonado">Abandonado</option>
+        </select>                    
+    </div>
+    <div>
+        <label for="tipo">Tipo</label>
+        <select name="tipo" id="tipo">
+            <option value=""></option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Estudo">Estudo</option>
+            <option value="Trabalho_Estudo">Trabalho / Estudo</option>
+            </select>                    
+    </div>
+    <div>
+        <label for="">Valor Necessário</label>
+        <input type="text" placeholder="">                  
+    </div>
+    <div>
+        <label for="">Valor Guardado</label>
+        <input type="text" placeholder="">                  
+    </div>
+    <div>
+        <label for="">Data de partida</label>
+        <input type="text" placeholder="">                  
+    </div>
+</section>
+
+<section >
+    <header>
+        <button onclick="criaPassoProjeto()">+ PASSOS</button>
+    </header>
+    <ol id="passos">
+    </ol>
+</section>
+
+<footer>
+    <button>Salvar</button>
+    <button>Cancelar</button>    
+</footer>   
